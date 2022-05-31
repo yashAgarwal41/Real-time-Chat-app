@@ -1,0 +1,201 @@
+/**** Imported API's ****/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins&family=Satisfy&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body, html{
+  height: 100%;
+}
+.main-container{
+  height:100%;
+  align-items: center;    /*vertically*/
+  justify-content: center;    /*horizontally*/
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(#c888f2, #8E66FA);
+  overflow: auto;
+}
+
+/************ Navbar starts ************/
+
+.navbar{
+  height:40px;
+}
+nav .navbar-nav li a{
+  color: white !important;
+}
+
+#logo{
+  font-family: 'Caveat', cursive;
+  font-size:25px;
+  /* text-shadow: 2px 2px rgb(158 100 181 / 95%); */
+}
+
+.nav-link{
+  height:30px;
+}
+.nav-icon{
+  height: 32px;
+  width: 32px;
+  float: right;
+}
+/************ Navbar Ends ************/
+
+/***************** Chat-Box Section *******************/
+.chat-section{  
+    margin: auto;
+    display: block;
+    margin-top: 15px;
+    width:600px;
+    max-width: 90%;
+    border-radius: 20px 20px 15px 15px;
+    background-color: white;
+    /* box-shadow: 0 3px 10px -3px rgba(10, 10, 10, 0.564); */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    
+}
+.brand{
+    background: linear-gradient(#9e48f3, #6881ef);
+    border-radius: 20px 20px 0 0;
+    padding:7px 20px 7px 20px;
+    display: flex;
+    align-items: center;
+}
+.brand h2{
+    font-family: 'Caveat', cursive;
+    margin-left: 20px;
+    text-shadow: 2px 2px rgb(111 110 111 / 95%);
+    font-size: 28px;
+    color:white;
+}
+
+/********* Message Display Area starts ***********/
+.message-area{
+    height:500px;
+    padding:16px;
+    padding-top: 40px;
+    display:flex;
+    flex-direction: column;
+    overflow-y:auto;
+}
+.message{
+    padding: 20px;
+    border-radius: 9px;
+    margin-bottom: 40px;
+    max-width:300px;
+    position: relative;
+}
+.message h4{
+    position: absolute;
+    top: -21px;
+    left:0;
+    color:#333;
+    font-size: 14px;
+    /* background-color: white; */
+}
+.outgoing{
+    /* background: #8f8be8; */
+    background: #E9E7E8;
+    color: black;
+    margin-left: auto;
+}
+.incoming{
+    background: #8E66FA;
+    color: white;
+    float:left;
+    width:auto;
+}
+/********* Message Display Area Ends ***********/
+
+/********* Messenger Area Starts ************/
+.messenger{
+  /* background-color: rgb(66, 65, 65); */
+  border-radius: 50%;
+}
+
+/******** Text-Editor starts *********/
+.text-editor-header{
+  /* background-color: #a568ef; */
+  background-color: rgb(222, 216, 216);
+  padding: 2px;
+}
+.text-editor-header .btn{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-right: 4px;
+  cursor: pointer;
+}
+.text-editor-header .btn .icon-color:hover{
+  color:rgb(127, 124, 127);
+}
+.icon-color {
+  color: black;
+  font-size:13px;
+}
+/******** Text-Editor Ends *********/
+
+#textarea{
+    padding:20px;
+    font-size: 15px;
+    min-width:100%;
+    min-height:30px;
+    border:none;
+    /* border: 1px solid rgba(0, 0, 0, 0.253); */
+    /* border-radius: 0 0 0 15px; */
+    outline: none;
+    background-color: rgb(222, 216, 216);
+    color: black;
+    display:inline-block
+}
+hr{
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+#send-btn{
+  width:5%;
+  height: 30px;  
+  margin-top: 3px;
+  background: #249b52;
+  color:white;
+  border: none;
+  border-radius: 100%;
+  cursor:pointer;
+
+}
+
+#send-btn:hover{
+  background-color: white !important ;
+  border: 1px solid black;
+  color:#249b52 !important;
+  border:none;
+}
+
+#send{
+  font-size:14px;
+}
+/********* Messenger Area Ends ************/
+
+/***** Footer CSS *****/
+#footer{
+  margin:auto;
+  font-size: 13px;
+  color: rgb(224 217 234);
+  display: block;
+  text-align:center;
+  width:50%;
+  margin-top: 10px;
+  
+}
+
+
+
+/* placeholder code */
+[contentEditable=true]:empty:before {
+    content: attr(placeholder);
+    opacity: 0.6;
+  }

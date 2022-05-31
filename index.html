@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChatMe</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/style.css" />
+  <!--Sweet Alert-->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <!-- favicon -->
+  <link rel="icon" href="chat3.png" />
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/25c9d39a22.js" crossorigin="anonymous"></script>
+  <!-- Emoji Picker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css"/>
+</head>
+
+<body>
+
+  <!-------------------------------------------------- HTML Starts -------------------------------------------->
+  <div class="main-container">
+    <!----------------- Navbar Section Starts ------------------>
+    <nav class="navbar navbar-expand-sm navbar-custom">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/" id="logo">ChatMe<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/yashAgarwal41"><img src="github2.png" alt=""
+              class="nav-icon" /></a>
+        </li>
+      </ul>
+    </nav>
+    <!----------------- Navbar Section Ends ------------------>
+
+
+    <!------------------------- Chat-Box Starts ---------------------------->
+    <section class="chat-section">
+      <!-- Brand Name Starts -->
+      <div class="brand">
+        <img height="25px" src="chat3.png" alt="" />
+        <h2>ChatMe</h2>
+      </div>
+      <!-- Brand Name Ends -->
+
+      <!---- Message Display Area Starts ----->
+      <div class="message-area">
+        <div class="outgoing message">
+          <h4>Tony</h4>
+          <p>Hey, how are you?</p>
+        </div>
+        <div class="incoming message">
+          <h4>Beast</h4>
+          <p>Yeah, I'm good. What about you?</p>
+        </div>
+      </div>
+      <!---- Message Display Area Ends ----->
+      <!-- <hr /> -->
+
+      <!---------------- Messenger Starts ----------------->
+      <div class="messenger">
+
+        <!-- Starting of Text-editor Header -->
+        <div class="text-editor-header">
+          <button type="button" class="btn" data-element="bold">
+            <i class="icon-color fa fa-bold"></i>
+          </button>
+          <span style="color:rgb(70, 68, 68)">|</span>
+          <button type="button" class="btn" data-element="italic">
+            <i class="icon-color fa fa-italic"></i>
+          </button>
+          <span style="color:rgb(70, 68, 68)">|</span>
+          <button type="button" class="btn" data-element="strikeThrough">
+            <i class="icon-color fa fa-strikethrough"></i>
+          </button>
+          <span style="color:rgb(70, 68, 68)">|</span>
+          <button type="button" class="btn" data-element="createLink">
+            <i class="icon-color fa fa-link"></i>
+          </button>
+          <span style="color:rgb(70, 68, 68)">|</span>
+          <button type="button" class="btn" data-element="insertUnorderedList">
+            <i class="icon-color fa fa-list-ul"></i>
+          </button>
+          <span style="color:rgb(70, 68, 68)">|</span>
+          <button type="button" class="btn" data-element="insertOrderedList">
+            <i class="icon-color fa fa-list-ol"></i>
+          </button>
+          <span style="color:rgb(70, 68, 68)">|</span>
+          <button type="button" class="btn" data-element="underline">
+            <i class="icon-color fa fa-underline"></i>
+          </button>
+        </div>
+        <!-- End of Text Editor Header -->
+        <hr>
+        <!-- Input-Message Textarea starts -->
+        <div id="textarea" contenteditable="true" placeholder="Chat here..">
+          <!-- Enter something -->
+        </div>
+        <!-- Input-Message textarea ends ---->
+        <hr>
+        <!-- Text-Editor Finisher Starts -->
+        <div class="text-editor-header">
+          <button type="button" class="btn" data-element="insertImage">
+            <i class="icon-color fa fa-image"></i>
+          </button>
+          <button id="send-btn" type="submit" style="float:right">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </button>
+        </div>
+        <!-- Text-Editor Finisher Ends -->
+      </div>
+      <!---------------- Messenger Ends ----------------->
+      
+    </section>
+    <!------------------------- Chat-Box Ends ---------------------------->
+
+    <!------------- Footer Starts ------------->
+    <footer id="footer">
+      <p>
+        Made with
+        <img src="heart.png" id="heart" height="12px" width="12px" /> by Yash
+      </p>
+    </footer>
+    <!------------- Footer Ends --------------->
+
+  </div>
+  <!----------------------------------------------- HTML Part Ends -------------------------------------------->
+
+  <!-------------------------------------------------- SCRIPTS ------------------------------------------------->
+  <!-- To access socket server(which is coming from node server) -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- Javascript -->
+  <script src="/client.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- Emoji Picker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+
+    <script type="text/javascript">
+      $('#textarea').emojioneArea({
+      pickerPosition:'bottom'
+    });
+    </script>
+</body>
+
+</html>
