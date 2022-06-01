@@ -1,4 +1,6 @@
 # Real-Time Chat App using Node.js and Socket.IO
+
+
 ### Description:
 * * *
 - A web application used for chatting purposes in which multiple users can chat together in real time with each other in a group..
@@ -9,6 +11,13 @@
 
 ##### To visit the Chat-Application: [Open Chat-App here](https://real-time-chatme-app.herokuapp.com/)
 
+<br>
+
+![Chat-app 1](https://user-images.githubusercontent.com/72182045/171355892-97404d20-c193-433e-be87-6ba4b6d71a94.png)
+
+![Chat-app 2](https://user-images.githubusercontent.com/72182045/171356223-2f654bf6-ed0e-4269-8fb3-a240e9e4ac38.png)
+
+<br>
 
 ### Installation:
 ***
