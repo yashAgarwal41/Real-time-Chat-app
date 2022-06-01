@@ -3,6 +3,7 @@ let name;
 let sendBtn = document.querySelector("#send-btn");
 let messageArea = document.querySelector(".message-area");
 let textarea = document.getElementById("textarea");
+let emoji = document.querySelector('.emojionearea-editor');
 
 //Text-Editor starts
 const elements = document.querySelectorAll('.btn');
