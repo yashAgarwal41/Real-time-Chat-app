@@ -41,6 +41,13 @@ Make sure you have Node.js and npm installed.
 	
 Your app should now be running on [localhost:3000](http://localhost:3000/).
 
+### Extra Features:
+* * *
+- Rich text Editor
+- Can make text Bold, Italic, Strikethrough etc.
+- Send message in a formatted way using Lists
+- Can share links and Images 
+
 ### Prerequisites:
 * * *
 - Basics of HTML, CSS, Javascript
