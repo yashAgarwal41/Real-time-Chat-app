@@ -38,3 +38,6 @@ Your app should now be running on [localhost:3000](http://localhost:3000/).
 - Node.Js and Express.js
 - Basics of Socket.IO [Socket.IO](https://socket.io/)
 
+### Support or Contact:
+
+Having trouble with Pages? Feel free to send me a mail at yashagarwal94144@gmail.com.
