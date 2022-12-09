@@ -9,7 +9,7 @@
 
 - Techstacks Used: HTML, CSS, JavaScript, Node.Js, Express.Js, Socket.io
 
-##### To visit the Chat-Application: [Open Chat-App here](https://chat-in-real-time.herokuapp.com/)
+##### To visit the Chat-Application: [Open Chat-App here](https://real-time-chatme-app.herokuapp.com/)
 
 <br>
 
