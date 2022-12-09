@@ -19,7 +19,7 @@
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/25c9d39a22.js" crossorigin="anonymous"></script>
   <!-- Emoji Picker -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css"/>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css"/> -->
 </head>
 
 <body>
@@ -35,7 +35,7 @@
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/yashAgarwal41"><img src="github2.png" alt=""
+          <a class="nav-link" href="https://github.com/Yash-Khokhar"><img src="github2.png" alt=""
               class="nav-icon" /></a>
         </li>
       </ul>
@@ -64,7 +64,7 @@
         </div>
       </div>
       <!---- Message Display Area Ends ----->
-      <!-- <hr /> -->
+      <hr />
 
       <!---------------- Messenger Starts ----------------->
       <div class="messenger">
@@ -98,25 +98,28 @@
           <button type="button" class="btn" data-element="underline">
             <i class="icon-color fa fa-underline"></i>
           </button>
-        </div>
-        <!-- End of Text Editor Header -->
-        <hr>
-        <!-- Input-Message Textarea starts -->
-        <div id="textarea" contenteditable="true" placeholder="Chat here..">
-          <!-- Enter something -->
-        </div>
-        <!-- Input-Message textarea ends ---->
-        <hr>
-        <!-- Text-Editor Finisher Starts -->
-        <div class="text-editor-header">
+          <span style="color:rgb(70, 68, 68)">|</span>
           <button type="button" class="btn" data-element="insertImage">
             <i class="icon-color fa fa-image"></i>
           </button>
-          <button id="send-btn" type="submit" style="float:right">
-            <i class="fa fa-paper-plane" aria-hidden="true"></i>
-          </button>
         </div>
-        <!-- Text-Editor Finisher Ends -->
+        <!-- End of Text Editor Header -->
+
+        <hr>
+        <!-- Input-Message Textarea starts -->
+        <div id="textarea" contenteditable="true" placeholder="Chat here..">
+        </div>
+        <button id="send-btn" type="submit" style="float:right">
+          <i class="fa fa-paper-plane" aria-hidden="true"></i>
+        </button>
+        <!-- Input-Message textarea ends ---->
+    
+        <!-- <div id="textarea" contenteditable="true" placeholder="Chat here.." style="height:2px">  -->
+          <!-- an extra class = "emojionearea" is also attached with it. To change textarea properties, edit this class -->
+        <!-- </div> -->
+        
+        <!-- <hr> -->
+
       </div>
       <!---------------- Messenger Ends ----------------->
       
@@ -126,8 +129,8 @@
     <!------------- Footer Starts ------------->
     <footer id="footer">
       <p>
-        Made with
-        <img src="heart.png" id="heart" height="12px" width="12px" /> by Yash
+        Made by Yash Khokhar
+        <!-- <img src="heart.png" id="heart" height="12px" width="12px" /> by Khokhar -->
       </p>
     </footer>
     <!------------- Footer Ends --------------->
@@ -153,13 +156,13 @@
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <!-- Emoji Picker -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
 
     <script type="text/javascript">
       $('#textarea').emojioneArea({
       pickerPosition:'bottom'
     });
-    </script>
+    </script> -->
 </body>
 
 </html>

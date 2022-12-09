@@ -23,7 +23,7 @@ body, html{
 /************ Navbar starts ************/
 
 .navbar{
-  height:40px;
+  height: 40px;
 }
 nav .navbar-nav li a{
   color: white !important;
@@ -61,7 +61,7 @@ nav .navbar-nav li a{
 .brand{
     background: linear-gradient(#9e48f3, #6881ef);
     border-radius: 20px 20px 0 0;
-    padding:7px 20px 7px 20px;
+    padding:5px 20px 5px 20px;
     display: flex;
     align-items: center;
 }
@@ -75,17 +75,18 @@ nav .navbar-nav li a{
 
 /********* Message Display Area starts ***********/
 .message-area{
-    height:500px;
+    height:445px;
     padding:16px;
     padding-top: 40px;
     display:flex;
     flex-direction: column;
     overflow-y:auto;
+    background-color: rgb(219, 215, 215);
 }
 .message{
     padding: 20px;
     border-radius: 9px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     max-width:300px;
     position: relative;
 }
@@ -98,13 +99,14 @@ nav .navbar-nav li a{
     /* background-color: white; */
 }
 .outgoing{
-    /* background: #8f8be8; */
-    background: #E9E7E8;
-    color: black;
+    /* background: #E9E7E8; */
+    background: #8f9ee0;
+    color: white;
     margin-left: auto;
 }
 .incoming{
-    background: #8E66FA;
+    /* background: #8E66FA; */
+    background: #9675ef;
     color: white;
     float:left;
     width:auto;
@@ -121,7 +123,7 @@ nav .navbar-nav li a{
 .text-editor-header{
   /* background-color: #a568ef; */
   background-color: rgb(222, 216, 216);
-  padding: 2px;
+  padding: 1px;
 }
 .text-editor-header .btn{
   border: none;
@@ -139,19 +141,33 @@ nav .navbar-nav li a{
 }
 /******** Text-Editor Ends *********/
 
+/**********Textarea Starts **********/
 #textarea{
+    margin-left: 10px;
+    margin-top: 5px;
+    margin: 5px 0px 5px 10px;
     padding:20px;
     font-size: 15px;
-    min-width:100%;
-    min-height:30px;
-    border:none;
-    /* border: 1px solid rgba(0, 0, 0, 0.253); */
-    /* border-radius: 0 0 0 15px; */
+    width:90%;
+    height:auto;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    border-radius: 50px;
     outline: none;
-    background-color: rgb(222, 216, 216);
+    background-color: white;
     color: black;
     display:inline-block
 }
+/* .emojionearea, .emojionearea.form-control{
+  margin-left: 10px;
+  width:90% !important;
+  height:6em !important;
+  display: inline-block !important;
+}
+.emojionearea .emojionearea-editor{
+  min-height: 5em !important;
+  max-height: 6em !important;
+}  */
+/************ Textarea Ends *************/
 hr{
   margin-top: 0rem !important;
   margin-bottom: 0rem !important;
@@ -159,13 +175,13 @@ hr{
 #send-btn{
   width:5%;
   height: 30px;  
-  margin-top: 3px;
+  margin-top: 15px;
+  margin-right: 5px;
   background: #249b52;
   color:white;
   border: none;
   border-radius: 100%;
   cursor:pointer;
-
 }
 
 #send-btn:hover{
